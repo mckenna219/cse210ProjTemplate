@@ -36,7 +36,11 @@ class Program
         if (userPercentage > 70)
         {
             Console.WriteLine("Congrats! You passed the class.");
-        }        
+        }       
+        else
+        {
+            Console.WriteLine("Better luck next time.");
+        } 
     }
 
 
