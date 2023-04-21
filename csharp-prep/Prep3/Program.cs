@@ -12,8 +12,9 @@ class Program
         // Generat a random number from 1 - 100
         Random randomGenerator = new Random();
         int magicNumber = randomGenerator.Next(1,100);
-        
+
         int guessNumber = 0;
+        // int totalGuesses = 0;
 
         // Loop as long as guess does not match magic number
         while (guessNumber != magicNumber)
@@ -38,6 +39,11 @@ class Program
                 displayPrompt = "You guessed it!";
             }
             Console.WriteLine($"{displayPrompt}");
+
+            // totalGuesses = guessNumber.Count;
+            // Console.WriteLine($"You guessed {totalGuesses} times.");
         }
+        
+        
     }
 }
